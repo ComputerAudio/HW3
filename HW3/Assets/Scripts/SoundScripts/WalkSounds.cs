@@ -37,7 +37,7 @@ public class WalkSounds : MonoBehaviour {
         
         if (Physics.Raycast(transform.position - Vector3.up  *.99f, -Vector3.up, out hit, Mathf.Infinity))
         {
-            print("Hello");
+            //print("Hello");
             ActiveSound aSound = hit.collider.GetComponent<ActiveSound>();
             if (aSound != null)
             {
