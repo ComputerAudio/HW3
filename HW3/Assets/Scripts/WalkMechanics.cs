@@ -53,4 +53,9 @@ public class WalkMechanics : MonoBehaviour {
         return vInput;
     }
 
+    public bool getIsWalking()
+    {
+        return Mathf.Abs(hInput) > .01f || Mathf.Abs(vInput) > .01f;
+    }
+
 }
