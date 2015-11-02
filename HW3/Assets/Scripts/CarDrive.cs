@@ -3,12 +3,21 @@ using System.Collections;
 
 public class CarDrive : MonoBehaviour {
     public float speed;
+    AudioSource aSource;
 
     Vector3 origin;
 
     void Start()
     {
         origin = transform.position;
+        aSource = GetComponent<AudioSource>();
+        setUpEngineSound();
+    }
+
+    void setUpEngineSound()
+    {
+        aSource.pitch = Random.Range(.75f, 1.2f);
+        aSource.volume = Random.Range(.5f, .7f);
     }
 
     void Update()
