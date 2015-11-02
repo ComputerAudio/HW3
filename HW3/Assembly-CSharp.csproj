@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SoundScripts\ActiveSound.cs" />
      <Compile Include="Assets\Scripts\SoundScripts\CollideSound.cs" />
+     <Compile Include="Assets\Scripts\SoundScripts\TriggerAmbientSound.cs" />
      <Compile Include="Assets\Scripts\SoundScripts\WalkSounds.cs" />
      <Compile Include="Assets\Scripts\WalkMechanics.cs" />
  <Reference Include="UnityEngine.UI">
