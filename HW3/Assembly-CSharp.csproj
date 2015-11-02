@@ -58,6 +58,11 @@
      <Compile Include="Assets\Scripts\SoundScripts\TriggerAmbientSound.cs" />
      <Compile Include="Assets\Scripts\SoundScripts\WalkSounds.cs" />
      <Compile Include="Assets\Scripts\WalkMechanics.cs" />
+     <Compile Include="Assets\hw3_includes\Scripts\Camera\CameraPowerSwitch.cs" />
+     <Compile Include="Assets\hw3_includes\Scripts\First-Person Controller\CharacterMotor.cs" />
+     <Compile Include="Assets\hw3_includes\Scripts\First-Person Controller\FPSInputController.cs" />
+     <Compile Include="Assets\hw3_includes\Scripts\First-Person Controller\MouseLook.cs" />
+     <Compile Include="Assets\hw3_includes\Scripts\First-Person Controller\PlatformInputController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
