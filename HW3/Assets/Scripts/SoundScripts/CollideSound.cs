@@ -11,11 +11,14 @@ public class CollideSound : MonoBehaviour {
     void Start()
     {
         aSource = GetComponent<AudioSource>();
+        aSource.clip = aClip;
     }
 
     void OnCollisionEnter(Collision collision)
     {
+        
         Collider col = collision.collider;
+        print(col.tag);
         //print(col.tag);
         if (col.tag == "Player")
         {
