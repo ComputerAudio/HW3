@@ -5,12 +5,12 @@ public class WalkSounds : MonoBehaviour {
     public float timeStep = 3f;
 
     AudioSource aSource;
-    WalkMechanics walkMechanics;
+    //WalkMechanics walkMechanics;
     float stepTimer;
 
     void Start()
     {
-        walkMechanics = GetComponent<WalkMechanics>();
+        //walkMechanics = GetComponent<WalkMechanics>();
         aSource = GetComponent<AudioSource>();
     }
 
@@ -18,7 +18,7 @@ public class WalkSounds : MonoBehaviour {
     {
         Debug.DrawLine(transform.position, -Vector3.up * 100 + transform.position);
         stepTimer = Mathf.MoveTowards(stepTimer, 0, Time.deltaTime);
-        if (!walkMechanics.getIsWalking())
+        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) < .01f && Mathf.Abs(Input.GetAxisRaw("Vertical")) < .01f)
         {
             stepTimer = 0;
             return;
