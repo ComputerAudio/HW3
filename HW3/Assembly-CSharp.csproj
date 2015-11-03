@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\AmbientScript.cs" />
      <Compile Include="Assets\MoveSide.cs" />
+     <Compile Include="Assets\RandomSound.cs" />
      <Compile Include="Assets\Scripts\CarDrive.cs" />
      <Compile Include="Assets\Scripts\CarSpawner.cs" />
      <Compile Include="Assets\Scripts\DoorInteractScript.cs" />
