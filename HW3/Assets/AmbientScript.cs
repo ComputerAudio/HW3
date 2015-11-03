@@ -25,7 +25,7 @@ public class AmbientScript : MonoBehaviour {
             aSource.volume = Mathf.MoveTowards(aSource.volume, 0, Time.deltaTime * timeStep);
             if (aSource.volume <= 0)
             {
-                changeClip = true;
+                changeClip = false;
                 aSource.Stop();
                 aSource.clip = pendingClip;
                 aSource.Play();
