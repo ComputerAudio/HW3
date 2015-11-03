@@ -21,7 +21,7 @@ public class MoveSide : MonoBehaviour {
 
     void Update()
     {
-        transform.position = Vector3.LerpUnclamped(transform.position, destinationVector[current], Time.deltaTime * speed);
+        transform.position = Vector3.Lerp(transform.position, destinationVector[current], Time.deltaTime * speed);
         if (Mathf.Abs((transform.position - destinationVector[current]).magnitude) < 1f)
         {
             changeCurrentDestination();
